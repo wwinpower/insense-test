@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER START-->
+  <header>
+    <nav class="navbar">
+      <ul class="navbar__content">
+        <li class="dropdown">
+          <figure class="dropdown__btn">
+            <img src="assets/images/avatar.png" alt="avatar" class="avatar">
+          </figure>
+          <ul class="dropdown__content dropdown__content_active">
+            <li><a href="#" class="dropdown__link">Feed page</a></li>
+            <li><a href="#" class="dropdown__link">FAQ page</a></li>
+            <li><a href="#" class="dropdown__link">User page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HEADER END-->
+
+  <!-- MAIN START-->
+  <main>
+    <section class="content">
+      <h2 class="content__title">Feed</h2>
+
+      <!-- TAB START-->
+      <article class="tab">
+
+        <!-- TAB-HEADER START-->
+        <div class="tab__header">
+          <ul class="tab__control">
+            <li class="tab__item tab__item_active">Albums <span class="tab__count tab__count_active">5</span></li>
+            <li class="tab__item">Posts <span class="tab__count">1</span></li>
+          </ul>
+        </div>
+        <!-- TAB-HEADER END-->
+
+        <!-- TAB-CONTENT START-->
+        <div class="tab__content">
+          <div class="card">
+            <div class="card__item_default">
+              <figure class="card__add">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.5 6V0H6.5V6H0.5V8H6.5V14H8.5V8H14.5V6H8.5Z" fill="#AFAFAF" />
+                </svg>
+                <figcaption>Add album</figcaption>
+              </figure>
+            </div>
+            <div class="card__item">
+              <div class="album">
+                <figure class="album__avatar album__avatar_border">
+                  <img src="assets/images/avatar-2.jpg" alt="">
+                </figure>
+                <div>
+                  <h3 class="album__username">Ivan Ivanov</h3>
+                  <h2 class="album__title">Acura Summer 2018</h2>
+                </div>
+                <ul class="album__action">
+                  <li class="dropdown">
+                    <figure class="dropdown__btn">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5 10C3.89543 10 3 10.8954 3 12C3 13.1046 3.89543 14 5 14C6.10457 14 7 13.1046 7 12C7 10.8954 6.10457 10 5 10ZM19 10C17.8954 10 17 10.8954 17 12C17 13.1046 17.8954 14 19 14C20.1046 14 21 13.1046 21 12C21 10.8954 20.1046 10 19 10ZM12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10Z"
+                          fill="#404040" />
+                      </svg>
+                    </figure>
+                    <ul class="dropdown__content dropdown__content_active">
+                      <li><a href="#" class="dropdown__link">Delete</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB-CONTENT END-->
+
+      </article>
+      <!-- TAB END-->
+
+    </section>
+  </main>
+  <!-- MAIN END-->
+
+  <!-- MODAL-REMOVE START-->
+  <div class="modal">
+    <figure class="modal__close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3165 19.0976 17.6834 19.0976 17.2928 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3165 4.90237 17.6834 5.29289 17.2928L10.5858 12L5.29289 6.70715C4.90237 6.31663 4.90237 5.68346 5.29289 5.29294C5.68342 4.90241 6.31658 4.90241 6.70711 5.29294L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+          fill="white" />
+      </svg>
+    </figure>
+    <div class="modal__body">
+      <div class="modal__container">
+        <figure>
+          <img src="assets/images/basket.svg" alt="">
+        </figure>
+        <div class="modal__content">
+          <h3 class="modal__title">Delete album</h3>
+          <p class="modal__description">Album will be permanently deleted</p>
+        </div>
+        <button class="btn btn--red">Delete</button>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL-REMOVE END-->
+
+  <!-- MODAL-ADD START-->
+  <div class="modal">
+    <figure class="modal__close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3165 19.0976 17.6834 19.0976 17.2928 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3165 4.90237 17.6834 5.29289 17.2928L10.5858 12L5.29289 6.70715C4.90237 6.31663 4.90237 5.68346 5.29289 5.29294C5.68342 4.90241 6.31658 4.90241 6.70711 5.29294L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+          fill="white" />
+      </svg>
+    </figure>
+    <div class="modal__body">
+      <div class="modal__container">
+        <h3 class="modal__title">Add album</h3>
+        <form action="#" class="form">
+          <div class="form__group">
+            <label for="title" class="label">Title</label>
+            <input type="text" class="input" id="title">
+          </div>
+          <div class="form__group">
+            <label for="description" class="label">Description</label>
+            <input type="text" class="input" id="description">
+          </div>
+        </form>
+        <button class="btn btn--blue">Send</button>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL-ADD END-->
+
+  <!-- SLIDER START-->
+  <div class="modal">
+    <figure class="modal__close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3165 19.0976 17.6834 19.0976 17.2928 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3165 4.90237 17.6834 5.29289 17.2928L10.5858 12L5.29289 6.70715C4.90237 6.31663 4.90237 5.68346 5.29289 5.29294C5.68342 4.90241 6.31658 4.90241 6.70711 5.29294L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+          fill="white" />
+      </svg>
+    </figure>
+    <div class="modal__body">
+      <div class="slider">
+        <div class="slider__content">
+          <figure class="slider__controller slider__prev">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M29.4142 12.5858C30.1953 13.3668 30.1953 14.6332 29.4142 15.4142L20.8284 24L29.4142 32.5858C30.1953 33.3668 30.1953 34.6332 29.4142 35.4142C28.6332 36.1953 27.3668 36.1953 26.5858 35.4142L16.5858 25.4142C15.8047 24.6332 15.8047 23.3668 16.5858 22.5858L26.5858 12.5858C27.3668 11.8047 28.6332 11.8047 29.4142 12.5858Z"
+                fill="white" />
+            </svg>
+          </figure>
+          <figure class="slider__images">
+            <img src="assets/images/avatar-2.jpg" alt="">
+          </figure>
+          <figure class="slider__controller slider__next">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.5858 12.5858C17.8047 13.3668 17.8047 14.6332 18.5858 15.4142L27.1716 24L18.5858 32.5858C17.8047 33.3668 17.8047 34.6332 18.5858 35.4142C19.3668 36.1953 20.6332 36.1953 21.4142 35.4142L31.4142 25.4142C32.1953 24.6332 32.1953 23.3668 31.4142 22.5858L21.4142 12.5858C20.6332 11.8047 19.3668 11.8047 18.5858 12.5858Z"
+                fill="white" />
+            </svg>
+          </figure>
+        </div>
+        <h2 class="slider__title">Title</h2>
+      </div>
+    </div>
+  </div>
+  <!-- SLIDER END-->
+
+</body>
+
+</html>

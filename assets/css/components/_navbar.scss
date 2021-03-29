@@ -1,0 +1,7 @@
+.navbar {
+    @include content-center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

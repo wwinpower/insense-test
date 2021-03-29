@@ -1,0 +1,16 @@
+.btn {
+    padding: 16px 32px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    color: $white;
+    cursor: pointer;
+
+    &--red {
+        background: $red;
+    }
+
+    &--blue {
+        background: $blue;
+    }
+}

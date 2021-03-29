@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER START-->
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__content">
+                <li class="dropdown">
+                    <figure class="dropdown__btn">
+                        <img src="assets/images/avatar.png" alt="avatar" class="avatar">
+                    </figure>
+                    <ul class="dropdown__content dropdown__content_active">
+                        <li><a href="#" class="dropdown__link">Feed page</a></li>
+                        <li><a href="#" class="dropdown__link">FAQ page</a></li>
+                        <li><a href="#" class="dropdown__link">User page</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END-->
+
+    <!-- MAIN START-->
+    <main>
+        <div class="profile">
+            <div class="profile__content">
+                <figure class="profile__avatar">
+                    <img src="assets/images/avatar-2.jpg" alt="">
+                </figure>
+                <form class="form profile__form">
+                    <div class="form__group">
+                        <label for="username" class="label">Profile name</label>
+                        <input type="text" value="@arm_vlad_" class="input" id="username"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="description" class="label">Description</label>
+                        <textarea class="textarea" id="description"></textarea>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" value="vladimir.abrahamyan96@gmail.com" class="input" id="email"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="website" class="label">Web site</label>
+                        <input type="text" value="www.comboskill.com" class="input" id="website"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="companyName" class="label">Company Name</label>
+                        <input type="text" value="www.comboskill.com" class="input" id="companyName"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="label">Phone</label>
+                        <input type="text" value="+37491416555" class="input" disabled id="phone"/>
+                    </div>
+                    <div class="form__group">
+                        <label for="address" class="label">Address</label>
+                        <input type="text" value="Hello world" class="input" id="address"/>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn btn--blue">Сахранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN END-->
+
+</body>
+
+</html>

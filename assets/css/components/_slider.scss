@@ -1,0 +1,30 @@
+.slider {
+    margin: auto;
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__images {
+        max-width: 1120px;
+        height: 560px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__controller {
+        cursor: pointer;
+    }
+
+    &__title {
+        text-align: center;
+        @include font-style($white, 500, 14px, 24px);
+        padding: 28px 0;
+    }
+}

@@ -1,0 +1,33 @@
+@mixin content-center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@mixin font-style($color, $weight, $fontSize, $lineHeight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin modal-background {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+@mixin modal-container {
+    background-color: $white;
+    padding: 60px 80px;
+    margin: auto;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    gap: 40px;
+    border-radius: 4px;
+}
